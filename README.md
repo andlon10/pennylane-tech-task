@@ -12,6 +12,18 @@ https://dinner-time-fe.fly.dev
 - Postgres
 - Fly.io
 
+## Code repositories
+
+I like to split my FE and BE in two repositories, as I prefer the separation of concerns, especially when working with other people. I have added all relevant users to the private repos, please let me know if someone is unable to access them.
+
+### Frontend
+
+[Github private repo](https://github.com/andlon10/dinner-time-fe)
+
+### Backend
+
+[Github private repo](https://github.com/andlon10/dinner-time)
+
 ## Task description
 
 This is my technical task for my application at Pennylane.
@@ -22,10 +34,10 @@ When I started working on this I was not very familiar with Ruby and Rails, whil
 
 The very first issue I encountered was with the provided dataset. I believe the data was scraped using a script which resulted in a quite incoherent set, where certain fields are not representing the correct information.
 
-For example, what should be a simple "Flour" ingredient comes in tens of variations based on the ingredient amount, such as "egg yolk, egg yolks, egg lightly beaten, large egg, lightly beaten" and so on. This poses several challenges, especially in term of searching for ingredient names (from the client) and displaying relevant ingredients. I did a little data transformation but due to the limited time I figured it would make sense to focus on the implemenation of the taks, since in an ideal scenario the data would be well structured.
-Note: some ingredient names will be provided in the following sections to allow for easy searching or recipes among the many duplicate ingredients.
+For example, what should be a simple "egg" ingredient comes in tens of variations based on the ingredient amount, such as "egg yolk, egg yolks, egg lightly beaten, large egg, eggs lightly beaten" and so on. This poses several challenges, especially in term of searching for ingredient names (from the client) and displaying relevant ingredients. I did a little data transformation but due to the limited time I figured it would make sense to focus on the implemenation of the taks, since in an ideal scenario the data would be well structured.
+Note: In order to fix this duplicate issue, some ingredient/recipes will be provided in the **Easy to find recipes** section to allow for easy searching of recipes among the many duplicate ingredients.
 
-Another slightly time consuming process was learning to use Fly.io. Now I find it quite useful, but initially I had to spend some time reading the forum to solve some problems I was facing.
+Another slightly time consuming process was learning to use Fly.io. Now I find it quite fun to use, but initially I had to spend some time reading their forum to solve some problems I was facing.
 
 Lastly, another challenge I faced was the time constraint. I was given roughly a week to complete this so I didn't spend too much time focusing on the small bits, I mostly made sure the end to end flow was complete and worked well.
 
@@ -44,7 +56,7 @@ Lastly, another challenge I faced was the time constraint. I was given roughly a
 
 ## Easy to find recipes
 
-As I mentioned earlier, due to the incosistent ingredient values in the seed file, the list of ingredients is quite confusing and has many duplicates. To speed up the review of the functionalities, I am attaching a list of ingredients you can copy and paste in the search field to find matching recipes quickly.
+As I mentioned earlier, due to the incosistent ingredient values in the seed file, the list of ingredients is quite confusing and has many duplicates. To speed up the review of the functionalities, I am attaching a list of ingredients you can **copy and paste** into the search field to find matching recipes quickly.
 Note: **match the exact string so that you can avoid the duplicates**
 
 - Pretzel Buns - [Link](https://dinner-time-fe.fly.dev/?ingredient_ids%5B%5D=6728&ingredient_ids%5B%5D=6601&ingredient_ids%5B%5D=6691):
@@ -70,9 +82,9 @@ Note: **match the exact string so that you can avoid the duplicates**
 
 Although I enjoyed this taks, I struggled a bit with working with the dataset provided. I think that for a non data science role this file is a little difficult to work with and requires time consuming work to be sanitised in a good way, which unfortunately I had little of. While I think the main features of the prototype are well designed, some ugly UX elements could be fixed with a more structured file.
 
-### Use of ML tools
+### Use of AI tools
 
-I am generally in favour of using ML tools such as ChatGPT during development, to speed up things when dealing with boilerplate code or repetetive tasks. In this project I limited the scope of their use to the following actions, to prevent building something I'm not 100% familiar with:
+I am generally in favour of using AI tools such as Copilot, Cursor, etc. during development, to speed up things when dealing with boilerplate code or repetetive tasks. In this project I limited the scope of their use to the following actions, to prevent building something I'm not 100% familiar with:
 
 - Transforming the dataset (I used a mix of migrations and SQL commands to try to sanitise the ingredients)
 - Generate the rails seed for the JSON file
