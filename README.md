@@ -18,11 +18,11 @@ I like to split my FE and BE in two repositories, as I prefer the separation of 
 
 ### Frontend
 
-[Github private repo](https://github.com/andlon10/dinner-time-fe)
+[Github repo](https://github.com/andlon10/dinner-time-fe)
 
 ### Backend
 
-[Github private repo](https://github.com/andlon10/dinner-time)
+[Github repo](https://github.com/andlon10/dinner-time)
 
 ## Task description
 
